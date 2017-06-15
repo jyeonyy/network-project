@@ -110,16 +110,17 @@ public class BaseFrame extends JFrame {
       }
      
      public static void setUserVisible(int i, boolean vsb){
-    	 System.out.println("setuservisible: "+vsb);
+    	 System.out.println("setuservisible: "+vsb+", i : "+i);
     	 otherUser[i].setVisible(vsb);
      }
      
      public static void setUserLocation(int i, int x, int y){
-    	 System.out.println("setuserlocation: "+x+y);
+    	 System.out.println("setuserlocation: "+x+y+" i : "+i);
     	 otherUser[i].setLocation(x, y);
      }
      
      public static void CreateOtherUser(int i, String name){
+    	 System.out.println("settext other user i : "+i);
     	 otherUser[i].setText(name);
      }
     

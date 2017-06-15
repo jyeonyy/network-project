@@ -32,7 +32,8 @@ public final class ChatNettyClient {
 	final static int D = 0;
 	final static int MSG = 1;
 	final static int GAMEIN = 3;
-	final static int GAMEOUT  = 4;
+	final static int GAMEOUT  = 4; 
+	
 	final static int LOCATIONCHANGED= 5;
 	
 	static String data = "";

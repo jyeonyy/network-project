@@ -15,9 +15,9 @@ public class ChatNettyClientHandler extends SimpleChannelInboundHandler<String> 
 	public void channelActive(ChannelHandlerContext ctx) throws Exception {
 		// TODO Auto-generated method stub
 		System.out.println("welcome :" + bf.getName());
+		for(int i=0;i<100;i++){
 		userinfo.add("");
-		userinfo.add("");
-		userinfo.add("");
+		}
 	}
 	public ChatNettyClientHandler() {
 		// TODO Auto-generated constructor stub
@@ -94,6 +94,7 @@ public class ChatNettyClientHandler extends SimpleChannelInboundHandler<String> 
 //					for(int i=0;i<userinfo.size();i++){
 //						String pretemp = (String) userinfo.get(i);
 //		
+				
 //					}
 //				}
 				userinfo.set(0, name);
@@ -156,9 +157,9 @@ public class ChatNettyClientHandler extends SimpleChannelInboundHandler<String> 
 			}
 			else if(name.equals(bf.getUsername())){
 				userinfo.clear();
-				userinfo.add("");
-				userinfo.add("");
-				userinfo.add("");
+				for(int i=0;i<100;i++){
+					userinfo.add("");
+				}
 			}
 		}
 		
